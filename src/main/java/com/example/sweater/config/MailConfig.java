@@ -22,21 +22,21 @@ public class MailConfig {
 //    private String protocol;
 //    @Value("${mail.debug}")
 //    private String debug;
-    @Bean
-    public JavaMailSender getMailSender(){
-        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-
-        mailSender.setHost(host);
-        mailSender.setUsername(username);
-        mailSender.setPassword(password);
-        mailSender.setPort(port);
-
-//        Properties properties = mailSender.getJavaMailProperties();
-//        properties.setProperty("mail.transport.protocol", protocol);
-//        properties.setProperty("mail.debug", debug);
-
-        return mailSender;
-    }
+//    @Bean
+//    public JavaMailSender getMailSender(){
+//        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+//
+//        mailSender.setHost(host);
+//        mailSender.setUsername(username);
+//        mailSender.setPassword(password);
+//        mailSender.setPort(port);
+//
+////        Properties properties = mailSender.getJavaMailProperties();
+////        properties.setProperty("mail.transport.protocol", protocol);
+////        properties.setProperty("mail.debug", debug);
+//
+//        return mailSender;
+//    }
 
 
 }
